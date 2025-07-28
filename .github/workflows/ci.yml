@@ -1,0 +1,35 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: userdb
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: ilumadb
+        ports: [5432:5432]
+        options: >-
+          --health-cmd="pg_isready -U userdb"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          pip install ruff pytest pandera psycopg2-binary
+      - name: Ruff
+        run: ruff .
+      - name: Pytest
+        env:
+          AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://userdb:password@localhost:5432/ilumadb
+        run: pytest -q

@@ -1,0 +1,77 @@
+[2025-07-28T17:54:33.325+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-28T17:54:33.440+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [queued]>
+[2025-07-28T17:54:33.455+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [queued]>
+[2025-07-28T17:54:33.457+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-07-28T17:54:33.471+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): t2_transform> on 2025-07-28 17:50:25.205466+00:00
+[2025-07-28T17:54:33.477+0000] {standard_task_runner.py:63} INFO - Started process 112 to run task
+[2025-07-28T17:54:33.480+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'jobs_ingest_transform', 't2_transform', 'manual__2025-07-28T17:50:25.205466+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/jobs_ingest_transform_dag.py', '--cfg-path', '/tmp/tmpclffrux2']
+[2025-07-28T17:54:33.482+0000] {standard_task_runner.py:91} INFO - Job 4: Subtask t2_transform
+[2025-07-28T17:54:33.582+0000] {task_command.py:426} INFO - Running <TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [running]> on host 890e7b92db67
+[2025-07-28T17:54:33.704+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Felipe Velez' AIRFLOW_CTX_DAG_ID='jobs_ingest_transform' AIRFLOW_CTX_TASK_ID='t2_transform' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T17:50:25.205466+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T17:50:25.205466+00:00'
+[2025-07-28T17:54:33.705+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-28T17:55:30.695+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-28T17:55:30.698+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.InvalidColumnReference: there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/transform_to_3nf.py", line 77, in main
+    map_title    = upsert_cat(df, "job_titles", "job_title_short", "title_short", id_col="job_title_id")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/transform_to_3nf.py", line 49, in upsert_cat
+    conn.execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1385, in execute
+    return meth(self, multiparams, params, _EMPTY_EXECUTION_OPTS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2134, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.InvalidColumnReference) there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+[SQL: INSERT INTO job_titles (title_short) SELECT unnest(%(vals)s) ON CONFLICT (title_short) DO NOTHING]
+[parameters: {'vals': ['Senior Data Engineer', 'Data Analyst', 'Data Engineer', 'Business Analyst', 'Data Scientist', 'Machine Learning Engineer', 'Senior Data Analyst', 'Cloud Engineer', 'Senior Data Scientist', 'Software Engineer']}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-07-28T17:55:30.737+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=jobs_ingest_transform, task_id=t2_transform, run_id=manual__2025-07-28T17:50:25.205466+00:00, execution_date=20250728T175025, start_date=20250728T175433, end_date=20250728T175530
+[2025-07-28T17:55:30.766+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4 for task t2_transform ((psycopg2.errors.InvalidColumnReference) there is no unique or exclusion constraint matching the ON CONFLICT specification
+
+[SQL: INSERT INTO job_titles (title_short) SELECT unnest(%(vals)s) ON CONFLICT (title_short) DO NOTHING]
+[parameters: {'vals': ['Senior Data Engineer', 'Data Analyst', 'Data Engineer', 'Business Analyst', 'Data Scientist', 'Machine Learning Engineer', 'Senior Data Analyst', 'Cloud Engineer', 'Senior Data Scientist', 'Software Engineer']}]
+(Background on this error at: https://sqlalche.me/e/14/f405); 112)
+[2025-07-28T17:55:30.922+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-28T17:55:31.017+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-28T17:55:31.021+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

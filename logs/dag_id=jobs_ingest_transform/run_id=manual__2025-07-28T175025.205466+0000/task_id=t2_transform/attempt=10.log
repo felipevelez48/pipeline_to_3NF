@@ -1,0 +1,55 @@
+[2025-07-28T20:03:49.602+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-28T20:03:49.710+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [queued]>
+[2025-07-28T20:03:49.719+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [queued]>
+[2025-07-28T20:03:49.730+0000] {taskinstance.py:2306} INFO - Starting attempt 10 of 10
+[2025-07-28T20:03:49.742+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): t2_transform> on 2025-07-28 17:50:25.205466+00:00
+[2025-07-28T20:03:49.747+0000] {standard_task_runner.py:63} INFO - Started process 188 to run task
+[2025-07-28T20:03:49.751+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'jobs_ingest_transform', 't2_transform', 'manual__2025-07-28T17:50:25.205466+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/jobs_ingest_transform_dag.py', '--cfg-path', '/tmp/tmp05oa_ijp']
+[2025-07-28T20:03:49.754+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask t2_transform
+[2025-07-28T20:03:49.848+0000] {task_command.py:426} INFO - Running <TaskInstance: jobs_ingest_transform.t2_transform manual__2025-07-28T17:50:25.205466+00:00 [running]> on host 10866dee4d4e
+[2025-07-28T20:03:49.992+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Felipe Velez' AIRFLOW_CTX_DAG_ID='jobs_ingest_transform' AIRFLOW_CTX_TASK_ID='t2_transform' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T17:50:25.205466+00:00' AIRFLOW_CTX_TRY_NUMBER='10' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T17:50:25.205466+00:00'
+[2025-07-28T20:03:49.993+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-28T20:04:23.753+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-28T20:04:23.755+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3791, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 152, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 181, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7080, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'job_via'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/transform_to_3nf.py", line 73, in main
+    df["job_via"] = df["job_via"].apply(fix_encoding)
+                    ~~^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/frame.py", line 3893, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3798, in get_loc
+    raise KeyError(key) from err
+KeyError: 'job_via'
+[2025-07-28T20:04:23.797+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=jobs_ingest_transform, task_id=t2_transform, run_id=manual__2025-07-28T17:50:25.205466+00:00, execution_date=20250728T175025, start_date=20250728T200349, end_date=20250728T200423
+[2025-07-28T20:04:23.821+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 13 for task t2_transform ('job_via'; 188)
+[2025-07-28T20:04:23.912+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-28T20:04:23.948+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-28T20:04:23.951+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

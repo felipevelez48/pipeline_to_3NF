@@ -1,0 +1,200 @@
+[2025-07-28T16:07:19.617+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:19.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:07:19.621+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:19.621+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:19.957+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:20.352+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.351+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:transform_jobs_to_3nf
+[2025-07-28T16:07:20.364+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.363+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:transform_jobs_to_3nf
+[2025-07-28T16:07:20.371+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.371+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:transform_jobs_to_3nf
+[2025-07-28T16:07:20.372+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.372+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:07:20.387+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.387+0000] {dag.py:3118} INFO - Creating ORM DAG for transform_jobs_to_3nf
+[2025-07-28T16:07:20.389+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:20.388+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:07:20.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.811 seconds
+[2025-07-28T16:07:50.550+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:50.551+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:07:50.553+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:50.553+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:50.878+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:07:50.908+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:50.907+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:07:50.921+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:07:50.921+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:07:50.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.398 seconds
+[2025-07-28T16:08:21.252+0000] {processor.py:161} INFO - Started process (PID=267) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:21.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:08:21.255+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:21.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:21.583+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:21.625+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:21.625+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:08:21.638+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:21.638+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:08:21.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.417 seconds
+[2025-07-28T16:08:51.984+0000] {processor.py:161} INFO - Started process (PID=271) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:51.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:08:51.987+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:51.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:52.284+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:08:52.314+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:52.314+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:08:52.328+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:08:52.328+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:08:52.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.373 seconds
+[2025-07-28T16:09:22.673+0000] {processor.py:161} INFO - Started process (PID=275) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:22.674+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:09:22.677+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:22.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:23.020+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:23.053+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:23.051+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:09:23.068+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:23.068+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:09:23.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.428 seconds
+[2025-07-28T16:09:53.464+0000] {processor.py:161} INFO - Started process (PID=279) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:53.465+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:09:53.467+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:53.467+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:53.768+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:09:53.801+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:53.801+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:09:53.822+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:09:53.822+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:09:53.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.406 seconds
+[2025-07-28T16:10:24.165+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:24.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:10:24.168+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:24.168+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:24.447+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:24.489+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:24.488+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:10:24.502+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:24.502+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:10:24.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.367 seconds
+[2025-07-28T16:10:54.937+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:54.938+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:10:54.940+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:54.939+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:55.194+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:10:55.234+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:55.234+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:10:55.246+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:10:55.246+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:10:55.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.339 seconds
+[2025-07-28T16:11:25.614+0000] {processor.py:161} INFO - Started process (PID=291) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:25.615+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:11:25.617+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:25.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:25.908+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:25.940+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:25.939+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:11:25.956+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:25.956+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:11:25.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.376 seconds
+[2025-07-28T16:11:56.312+0000] {processor.py:161} INFO - Started process (PID=295) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:56.313+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:11:56.314+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:56.314+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:56.576+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:11:56.604+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:56.604+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:11:56.620+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:11:56.620+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:11:56.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.334 seconds
+[2025-07-28T16:12:27.006+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:27.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:12:27.009+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:27.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:27.297+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:27.334+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:27.334+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:12:27.352+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:27.351+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:12:27.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.387 seconds
+[2025-07-28T16:12:57.699+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:57.700+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:12:57.702+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:57.702+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:57.978+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:12:58.019+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:58.019+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:12:58.032+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:12:58.032+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:12:58.058+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.366 seconds
+[2025-07-28T16:13:28.459+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:28.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:13:28.462+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:28.462+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:28.733+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:28.763+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:28.763+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:13:28.777+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:28.777+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:13:28.800+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.347 seconds
+[2025-07-28T16:13:59.122+0000] {processor.py:161} INFO - Started process (PID=311) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:59.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:13:59.125+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:59.125+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:59.413+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:13:59.441+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:59.441+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:13:59.455+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:13:59.455+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:13:59.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.374 seconds
+[2025-07-28T16:14:29.813+0000] {processor.py:161} INFO - Started process (PID=315) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:14:29.814+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:14:29.817+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:14:29.816+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:14:30.092+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:14:30.120+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:14:30.120+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:14:30.134+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:14:30.133+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:14:30.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.362 seconds
+[2025-07-28T16:15:00.482+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:00.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:15:00.485+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:00.484+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:00.757+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:00.789+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:00.788+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:15:00.806+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:00.805+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:15:00.839+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.362 seconds
+[2025-07-28T16:15:31.160+0000] {processor.py:161} INFO - Started process (PID=323) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:31.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:15:31.164+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:31.164+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:31.512+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:15:31.546+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:31.546+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:15:31.559+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:15:31.559+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:15:31.583+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.429 seconds
+[2025-07-28T16:16:01.842+0000] {processor.py:161} INFO - Started process (PID=327) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:01.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:16:01.845+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:01.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:02.141+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:02.175+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:02.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:16:02.190+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:02.190+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:16:02.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.381 seconds
+[2025-07-28T16:16:32.581+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:32.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:16:32.584+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:32.584+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:32.852+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:16:32.880+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:32.879+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:16:32.893+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:16:32.893+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:16:32.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.352 seconds
+[2025-07-28T16:17:03.211+0000] {processor.py:161} INFO - Started process (PID=335) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:03.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:17:03.214+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:03.214+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:03.497+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:03.539+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:03.538+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:17:03.552+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:03.552+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:17:03.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.372 seconds
+[2025-07-28T16:17:33.966+0000] {processor.py:161} INFO - Started process (PID=341) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:33.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:17:33.971+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:33.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:34.270+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:17:34.307+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:34.307+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:17:34.323+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:17:34.322+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:17:34.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.388 seconds
+[2025-07-28T16:18:04.746+0000] {processor.py:161} INFO - Started process (PID=347) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:04.747+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:18:04.749+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:04.749+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:05.044+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:05.089+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:05.089+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:18:05.104+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:05.104+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:18:05.128+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.388 seconds
+[2025-07-28T16:18:35.917+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:35.918+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:18:35.920+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:35.920+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:36.184+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:18:36.213+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:36.213+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:18:36.225+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:18:36.225+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:18:36.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.348 seconds
+[2025-07-28T16:19:06.687+0000] {processor.py:161} INFO - Started process (PID=359) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:06.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:19:06.690+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:06.689+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:06.953+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:06.985+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:06.985+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:19:06.998+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:06.998+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:19:07.032+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.351 seconds
+[2025-07-28T16:19:37.453+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:37.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:19:37.457+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:37.457+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:37.779+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:19:37.814+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:37.814+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:19:37.830+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:19:37.830+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:19:37.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.411 seconds
+[2025-07-28T16:20:08.535+0000] {processor.py:161} INFO - Started process (PID=371) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:08.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:20:08.538+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:08.537+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:08.802+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:08.831+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:08.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:20:08.844+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:08.844+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:20:08.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.350 seconds
+[2025-07-28T16:20:39.442+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:39.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:20:39.446+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:39.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:39.713+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:20:39.742+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:39.742+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:20:39.756+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:20:39.756+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:20:39.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.344 seconds
+[2025-07-28T16:21:10.412+0000] {processor.py:161} INFO - Started process (PID=383) to work on /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:21:10.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/transform_3nf_dag.py for tasks to queue
+[2025-07-28T16:21:10.416+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:21:10.416+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:21:10.695+0000] {processor.py:840} INFO - DAG(s) 'transform_jobs_to_3nf' retrieved from /opt/airflow/dags/transform_3nf_dag.py
+[2025-07-28T16:21:10.740+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:21:10.739+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T16:21:10.754+0000] {logging_mixin.py:188} INFO - [2025-07-28T16:21:10.754+0000] {dag.py:3954} INFO - Setting next_dagrun for transform_jobs_to_3nf to None, run_after=None
+[2025-07-28T16:21:10.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/transform_3nf_dag.py took 0.373 seconds

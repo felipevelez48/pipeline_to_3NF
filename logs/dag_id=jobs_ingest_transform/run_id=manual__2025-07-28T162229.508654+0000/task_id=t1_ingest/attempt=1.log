@@ -1,0 +1,20 @@
+[2025-07-28T16:22:34.619+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-28T16:22:34.724+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: jobs_ingest_transform.t1_ingest manual__2025-07-28T16:22:29.508654+00:00 [queued]>
+[2025-07-28T16:22:34.742+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: jobs_ingest_transform.t1_ingest manual__2025-07-28T16:22:29.508654+00:00 [queued]>
+[2025-07-28T16:22:34.748+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-07-28T16:22:34.761+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): t1_ingest> on 2025-07-28 16:22:29.508654+00:00
+[2025-07-28T16:22:34.767+0000] {standard_task_runner.py:63} INFO - Started process 402 to run task
+[2025-07-28T16:22:34.770+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'jobs_ingest_transform', 't1_ingest', 'manual__2025-07-28T16:22:29.508654+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/jobs_ingest_transform_dag.py', '--cfg-path', '/tmp/tmphdr2ku64']
+[2025-07-28T16:22:34.773+0000] {standard_task_runner.py:91} INFO - Job 3: Subtask t1_ingest
+[2025-07-28T16:22:34.859+0000] {task_command.py:426} INFO - Running <TaskInstance: jobs_ingest_transform.t1_ingest manual__2025-07-28T16:22:29.508654+00:00 [running]> on host 0361872d8b87
+[2025-07-28T16:22:34.975+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Felipe Velez' AIRFLOW_CTX_DAG_ID='jobs_ingest_transform' AIRFLOW_CTX_TASK_ID='t1_ingest' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T16:22:29.508654+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T16:22:29.508654+00:00'
+[2025-07-28T16:22:34.977+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-28T16:22:35.006+0000] {ingest_raw.py:17} INFO - Leyendo /opt/airflow/data/data_jobs.csv …
+[2025-07-28T16:22:44.164+0000] {ingest_raw.py:20} INFO - Filas leídas: 785741
+[2025-07-28T16:23:22.017+0000] {ingest_raw.py:23} INFO - Datos cargados en tabla jobs_raw
+[2025-07-28T16:23:22.107+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-28T16:23:22.108+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-28T16:23:22.122+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=jobs_ingest_transform, task_id=t1_ingest, run_id=manual__2025-07-28T16:22:29.508654+00:00, execution_date=20250728T162229, start_date=20250728T162234, end_date=20250728T162322
+[2025-07-28T16:23:22.211+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-28T16:23:22.278+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-07-28T16:23:22.281+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

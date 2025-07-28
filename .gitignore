@@ -3,3 +3,10 @@ pgdata/
 __pycache__/
 *.pyc
 logs/data/*.csv
+
+# ───────── temporales / artefactos ─────────
+logs/
+__pycache__/
+.env*
+*.db
+data/data_jobs.csv
